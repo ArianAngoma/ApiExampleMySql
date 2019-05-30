@@ -1,0 +1,16 @@
+{
+  "name": "restapinodemysql",
+  "version": "1.0.0",
+  "description": "API Xamarin - Grupo 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "author": "Grupo 8",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
