@@ -3,16 +3,16 @@ CREATE DATABASE IF NOT EXISTS medicos;
 USE medicos;
 
 CREATE TABLE doctores (
-	id INT(11) NOT NULL UNIQUE,
-    apellido_paterno VARCHAR(45) NOT NULL,
-    apellido_materno VARCHAR(45) NOT NULL,
-    nombre VARCHAR(45) NOT NULL,
-    dni INT(8) NOT NULL UNIQUE,
-    especialidad VARCHAR(80) NOT NULL,
-    codigo_colegiado INT NOT NULL UNIQUE
+	Id INT(11) NOT NULL UNIQUE,
+    Apellido_paterno VARCHAR(45) NOT NULL,
+    Apellido_materno VARCHAR(45) NOT NULL,
+    Nombre VARCHAR(45) NOT NULL,
+    Dni INT(8) NOT NULL UNIQUE,
+    Especialidad VARCHAR(80) NOT NULL,
+    Codigo_colegiado INT NOT NULL UNIQUE
 );
-ALTER TABLE doctores ADD PRIMARY KEY (id);
-ALTER TABLE doctores MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE doctores ADD PRIMARY KEY (Id);
+ALTER TABLE doctores MODIFY Id INT(11) NOT NULL AUTO_INCREMENT;
 
 INSERT INTO doctores VALUES
 	(1, 'Angoma', 'Vilchez', 'Arian', 73484356, 'Odontología', 123456789),
